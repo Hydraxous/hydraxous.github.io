@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Projects</title>
+</head>
+<body class="bg-main-bg">
+    <nav class="relative container mx-auto p-5  mt-10">
+        <div class="flex items-center justify-between">
+            <a href="index.html" class="p-5 pb-8 rounded-md bg-darkBlue hover:bg-skyBlue">
+                <h1 class="text-7xl text-skyBlue hover:text-darkBlue">Hydraxous</h1>
+            </a>
+            <div class="p-5">
+                <a href="#" class="p-5 px-10 pt-4 text-4xl text-darkBlue bg-skyBlue rounded-md baseline hover:bg-coolWhite">Hire</a>
+                <a href="https://ko-fi.com/Hydraxous" target="_blank" rel="noopener noreferrer" class="p-5 px-6 pt-4 text-4xl text-darkBlue bg-skyBlue rounded-md baseline hover:bg-coolWhite">Donate</a>
+            </div>
+            
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="container flex mx-auto justify-center">
+            <h1 class="flex mx-auto text-7xl text-coolWhite font-bold bg-darkBlue pt-5 pb-5 pl-40 pr-40 rounded-md">MODS</h1>
+        </div>
+        <!-- Content Body -->
+        <div id="modlistbody" class="container flex flex-col mx-auto justify-center mt-16 mb-16 space-y-3">
+        <!-- Content Entry -->
+            
+        <!-- End Content Entry -->
+
+            
+        </div>
+    </section>
+</body>
+<script type="module" src="modlist.js"></script>
+
+
+</html>
+
+<template id="modListEntryTemplate">
+    <div class="container flex mx-auto justify-between bg-veryDarkBlue border-4 border-darkBlue rounded-md p-2">
+        <img src="images/thumbnails/moyaiskulls_thumb.png" alt="" class="rounded-md border-4 border-darkBlue">
+        <div class="p-4 container flex-col mx-auto">
+            <div class=" container flex justify-between">
+                <h1 class="text-5xl text-coolWhite font-bold">MOD_NAME</h1>
+                <h2 class="text-2xl text-lapis">MOD_VERSION</h2>
+            </div>
+            <div class="container flex justify-between pb-2">
+                <a href="http://devilmayquake.com"><h2 class="text-2xl text-skyBlue pt-2">MOD_PLATFORM</h2></a>
+                <div class="container w-1/6 flex space-x-4">
+                    <a href="https://github.com/Hydraxous/UltraFunGuns" class="text-skyBlue bg-darkBlue p-2  rounded-md hover:text-darkBlue hover:bg-skyBlue"><img src="images/icons/githubIcon.png" alt="" class=""></a>
+                    <a href="https://thunderstore.io/package/download/Hydraxous/HydraDynamics/1.1.0/" class="text-skyBlue bg-darkBlue border-2 border-skyBlue p-2 pl-4 pr-4 rounded-md hover:text-darkBlue hover:bg-skyBlue">DOWNLOAD</a>
+                </div>
+            </div>
+            <p class="p-4 bg-darkBlue text-coolWhite rounded-md">MOD_DESCRIPTION</p>
+        </div>
+    </div>
+</template>

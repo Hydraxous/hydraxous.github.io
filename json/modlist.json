@@ -1,0 +1,68 @@
+[
+  {
+    "Name": "UltraFunGuns",
+    "Version": "1.2.1",
+    "Platform": "ULTRAKILL",
+    "PlatformURL": "http://devilmayquake.com",
+    "Description": "UltraFunGuns is a huge content addition to ULTRAKILL. It includes 16+ new weapons, a basketball mini-game, new weapon interactions, customizable inventory, and easter eggs.",
+    "ThumbnailURL": "images/thumbnails/ufg_thumb.png",
+    "ThumbnailAltText": "UltraFunGuns Icon",
+    "DownloadURL": "https://thunderstore.io/package/download/Hydraxous/UltraFunGuns/1.2.1/",
+    "GithubURL": "https://github.com/Hydraxous/UltraFunGuns"
+  },
+  {
+    "Name": "HydraDynamics",
+    "Version": "1.1.0",
+    "Platform": "UnityEngine",
+    "PlatformURL": "https://unity.com/",
+    "Description": "HydraDynamics is a library mod for games made with Unity. It includes tools for data persistence, version checking, and keybinds. Most importantly it allows any mods that use it to communicate and exchange data without directly depending upon each other.",
+    "ThumbnailURL": "images/thumbnails/hydradynamics_thumb.png",
+    "ThumbnailAltText": "Hydynamics Icon",
+    "DownloadURL": "https://thunderstore.io/package/download/Hydraxous/HydraDynamics/1.1.0/",
+    "GithubURL": "https://github.com/Hydraxous"
+  },
+  {
+    "Name": "BossRush",
+    "Version": "1.1.2",
+    "Platform": "ULTRAKILL",
+    "PlatformURL": "http://devilmayquake.com",
+    "Description": "Boss Rush adds a brand new gamemode to Ultrakill, Boss Rush. Fight all level bosses in sequence, then start from the beginning with the bosses getting stronger on each loop. Includes run statistics, high scores, and a single-life mode.",
+    "ThumbnailURL": "images/thumbnails/bossrush_thumb.png",
+    "ThumbnailAltText": "BossRush Icon",
+    "DownloadURL": "https://thunderstore.io/package/download/Hydraxous/BossRush/1.1.2/",
+    "GithubURL": "https://github.com/Hydraxous/BossRush"
+  },
+  {
+    "Name": "EasyPZ",
+    "Version": "2.0.2",
+    "Platform": "ULTRAKILL",
+    "PlatformURL": "http://devilmayquake.com",
+    "Description": "EasyPZ is a QoL mod for displaying currently required time, style, and kills required for obtaining the level's P rank. It also includes an auto-restart feature if you fail to meet the requirements, and a customizable color scheme.",
+    "ThumbnailURL": "images/thumbnails/ezpz_thumb.png",
+    "ThumbnailAltText": "EasyPZ Icon",
+    "DownloadURL": "https://thunderstore.io/package/download/Hydraxous/EasyPZ/2.0.2/",
+    "GithubURL": "https://github.com/Hydraxous/EasyPZ-ULTRAKILL"
+  },
+  {
+    "Name": "LogansHat",
+    "Version": "1.0.0",
+    "Platform": "Knight's Try",
+    "PlatformURL": "https://store.steampowered.com/app/1779180/Knights_Try/",
+    "Description": "Add's a big ol hat to the Knight.",
+    "ThumbnailURL": "images/thumbnails/placeholder_thumb.png",
+    "ThumbnailAltText": "Bighat Icon",
+    "DownloadURL": "",
+    "GithubURL": ""
+  },
+  {
+    "Name": "MoyaiSkulls",
+    "Version": "1.0.0",
+    "Platform": "ULTRAKILL",
+    "PlatformURL": "http://devilmayquake.com",
+    "Description": "Replaces all base game skull items with stylized Moyai statues. Also sometimes plays vine boom sound when punching with them.",
+    "ThumbnailURL": "images/thumbnails/moyaiskulls_thumb.png",
+    "ThumbnailAltText": "MoyaiSkulls Icon",
+    "DownloadURL": "https://thunderstore.io/package/download/Hydraxous/MoyaiSkulls/1.0.0/",
+    "GithubURL": "https://github.com/Hydraxous/MoyaiSkull"
+  }
+]
