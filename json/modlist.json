@@ -59,10 +59,21 @@
     "Version": "1.0.0",
     "Platform": "ULTRAKILL",
     "PlatformURL": "http://devilmayquake.com",
-    "Description": "Replaces all base game skull items with stylized Moyai statues. Also sometimes plays vine boom sound when punching with them.",
+    "Description": "Replaces all base game skull items with stylized Moyai statues. Also sometimes plays fun sound effects when punching with them.",
     "ThumbnailURL": "images/thumbnails/moyaiskulls_thumb.png",
     "ThumbnailAltText": "MoyaiSkulls Icon",
     "DownloadURL": "https://thunderstore.io/package/download/Hydraxous/MoyaiSkulls/1.0.0/",
     "GithubURL": "https://github.com/Hydraxous/MoyaiSkull"
+  },
+  {
+    "Name": "UltraTelephone",
+    "Version": "1.1.4",
+    "Platform": "ULTRAKILL",
+    "PlatformURL": "http://devilmayquake.com",
+    "Description": "A satirical mod designed to make ULTRAKILL feel very strange and unpredictable to play. The premise behind the development of the mod was for the code to be passed on through several developers with zero communication, hence the name Telephone. The mod was made in collaboration with numerous other ULTRAKILL mod developers whom can be found at https://github.com/orgs/CultOfJakito/people",
+    "ThumbnailURL": "images/thumbnails/ultratelephone_thumb.png",
+    "ThumbnailAltText": "UltraTelephone Icon",
+    "DownloadURL": "https://thunderstore.io/package/download/CultOfJakito/UltraTelephone/1.1.4/",
+    "GithubURL": "https://github.com/CultOfJakito/UltraTelephone"
   }
 ]

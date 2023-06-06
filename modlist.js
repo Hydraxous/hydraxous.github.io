@@ -3,8 +3,6 @@
 
 import mods from './json/modlist.json' assert {type: 'json'};
 
-console.log(mods);
-
 class ModEntry {
     constructor(Name, Version, Platform, PlatformURL, ThumbnailURL, ThumbnailAltText, Description, GithubURL, DownloadURL)
     {
@@ -44,11 +42,6 @@ class ModEntry {
 }
 
 var contentBody = document.getElementById("modlistbody");
-
-console.log("HELLO WORLD SCRIPT TUNNING");
-console.log(contentBody.nodeName);
-
-let testEntry = new ModEntry("Fart Lol", "4.20","Poop", "moyaiskulls", "This is balls lmao lol lmao lmao lol lmao lmao lol lol lmao");
 
 for(let i =0;i < mods.length; i++)
 {
