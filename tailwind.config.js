@@ -20,7 +20,8 @@ module.exports = {
         lapis: 'hsl(239, 19%, 53%)',
         coolWhite: 'hsl(300, 31%, 94%)',
         dullBlue: 'hsl(199, 51%, 57%)',
-        skyBlue: 'hsl(178, 51%, 77%)'
+        skyBlue: 'hsl(178, 51%, 77%)',
+        superDark: 'hsl(230, 10%, 6%)'
       }
     },
   },

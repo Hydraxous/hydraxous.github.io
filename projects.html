@@ -4,45 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <title>Hire Hydraxous</title>
 </head>
 <body class="bg-main-bg">
-    <nav class="relative container mx-auto p-5  mt-10">
-        <div class="flex items-center justify-between">
-            <a href="index.html" class="p-5 pb-8 rounded-md bg-darkBlue hover:bg-skyBlue">
-                <h1 class="text-7xl text-skyBlue hover:text-darkBlue">Hydraxous</h1>
-            </a>
-            <div class="p-5">
-                <a href="hire.html" class="p-5 px-10 pt-4 text-4xl text-darkBlue bg-skyBlue rounded-md baseline hover:bg-coolWhite">Hire</a>
-                <a href="https://ko-fi.com/Hydraxous" target="_blank" rel="noopener noreferrer" class="p-5 px-6 pt-4 text-4xl text-darkBlue bg-skyBlue rounded-md baseline hover:bg-coolWhite">Donate</a>
-            </div>
-            
-        </div>
+    <nav id="navbar" class="relative container mx-auto p-5  mt-10">
+        <nav id="navbar" class="relative container mx-auto p-5  mt-10">
+            <script src="/injectnav.js"></script>
+        </nav>
     </nav>
     <section id="hero">
+        <!--
         <div id="featured" class="container mx-auto bg-veryDarkBlue">
             <h1 class="p-4 pt-2 bg-darkBlue rounded-md text-7xl text-skyBlue text-left">Featured</h1>
         </div>
-        <div class="mt-10 container flex mx-auto space-x-4">
+        -->
+        <div class="mt-10 container flex lg:flex-row sm:flex-col mx-auto space-x-4">
         <!-- double content box -->
-            <div class="p-2 container flex flex-col bg-veryDarkBlue mx-auto">
+            <div class="p-2 container flex flex-col bg-veryDarkBlue mx-auto space-y-4">
                 <h1 class="p-4 pt-2 bg-darkBlue text-7xl text-skyBlue text-left">Projects</h1>
-                <div>
-                    <img src="images/thumbnails/bossrush_thumb.png" class="h-10">
-                    <div class="flex flex-col w-4/5">
-                        <h1 class="p-4 pt-2 bg-darkBlue rounded-md text-7xl text-skyBlue text-left">Featured</h1>
+                <a href="/placeholder.html" class="flex flex-row border-4 border-darkBlue rounded-md bg-superDark hover:bg-lapis text-lapis hover:text-darkBlue">
+                    <img src="images/thumbnails/placeholder_wide_thumb.png" class="h-20 w-2/5 border-r-4 border-r-darkBlue">
+                    <div class="flex flex-col w-3/5 justify-center">
+                        <h1 class="p-4 pt-2 text-5xl text-right">Games</h1>
                     </div>
-                </div>
+                </a>
+                <a href="projects/mods.html" class="flex flex-row border-4 border-darkBlue rounded-md bg-superDark hover:bg-lapis text-lapis hover:text-darkBlue">
+                    <img src="images/thumbnails/placeholder_wide_thumb.png" class="h-20 w-2/5 border-r-4 border-r-darkBlue">
+                    <div class="flex flex-col w-3/5 justify-center">
+                        <h1 class="p-4 pt-2 text-5xl text-right">Mods</h1>
+                    </div>
+                </a>
+                <a href="/placeholder.html" class="flex flex-row border-4 border-darkBlue rounded-md bg-superDark hover:bg-lapis text-lapis hover:text-darkBlue">
+                    <img src="images/thumbnails/placeholder_wide_thumb.png" class="h-20 w-2/5 border-r-4 border-r-darkBlue">
+                    <div class="flex flex-col w-3/5 justify-center">
+                        <h1 class="p-4 pt-2 text-5xl text-right">Software</h1>
+                    </div>
+                </a>
+                <a href="/placeholder.html" class="flex flex-row border-4 border-darkBlue rounded-md bg-superDark hover:bg-lapis text-lapis hover:text-darkBlue">
+                    <img src="images/thumbnails/placeholder_wide_thumb.png" class="h-20 w-2/5 border-r-4 border-r-darkBlue">
+                    <div class="flex flex-col w-3/5 justify-center">
+                        <h1 class="p-4 pt-2 text-5xl text-right">Artwork</h1>
+                    </div>
+                </a>
+                <a href="/placeholder.html" class="flex flex-row border-4 border-darkBlue rounded-md bg-superDark hover:bg-lapis text-lapis hover:text-darkBlue">
+                    <img src="images/thumbnails/placeholder_wide_thumb.png" class="h-20 w-2/5 border-r-4 border-r-darkBlue">
+                    <div class="flex flex-col w-3/5 justify-center">
+                        <h1 class="p-4 pt-2 text-5xl text-right">Journals</h1>
+                    </div>
+                </a>
+                <a href="/placeholder.html" class="flex flex-row border-4 border-darkBlue rounded-md bg-superDark hover:bg-lapis text-lapis hover:text-darkBlue">
+                    <img src="images/thumbnails/placeholder_wide_thumb.png" class="h-20 w-2/5 border-r-4 border-r-darkBlue">
+                    <div class="flex flex-col w-3/5 justify-center">
+                        <h1 class="p-4 pt-2 text-5xl text-right">Other</h1>
+                    </div>
+                </a>
             </div>
 
-            <div class="p-2 container flex flex-col bg-veryDarkBlue rounded-md mx-auto justify-center">
-                <h1 class="p-4 pt-2 bg-darkBlue rounded-md text-7xl text-skyBlue text-left">Devlog</h1>
-                <div class="mt-10 mb-10 flex flex-wrap justify-evenly">
-                    <a href="#" class="flex-col w-full sm:w-1/2 rounded-md bg-darkBlue hover:bg-slate-950">
-                        <img class="rounded-md object-fill" src="images/thumbnails/bossrush_thumb.png">
-                        <h1 class="text-4xl text-center text-coolWhite">Games</h1>
-                    </a>
+            <div id="dynamicViewBody" class="p-2 container flex flex-col bg-veryDarkBlue mx-auto space-y-4">
+                <h1 class="p-4 pt-2 bg-darkBlue text-7xl text-skyBlue text-left">Featured</h1>
+                <div class="container flex justify-center">
+                    <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">Overhauling the title screen and main menu for my game. Really leaning into the OoT vibe for the game<a href="https://twitter.com/hashtag/screenshotsaturday?src=hash&amp;ref_src=twsrc%5Etfw">#screenshotsaturday</a> <a href="https://twitter.com/hashtag/indiedev?src=hash&amp;ref_src=twsrc%5Etfw">#indiedev</a> <a href="https://t.co/NpeRTnZWQQ">pic.twitter.com/NpeRTnZWQQ</a></p>&mdash; Hydra (@Hydraxous) <a href="https://twitter.com/Hydraxous/status/1665283219858522113?ref_src=twsrc%5Etfw">June 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
             </div>
         <!-- end double content box -->
@@ -50,5 +72,5 @@
         
     </section>
 </body>
-
+<script src="projectspage.js"></script>
 </html>
