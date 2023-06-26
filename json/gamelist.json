@@ -1,0 +1,57 @@
+[
+  {
+    "Name": "Hades' Cave",
+    "InfoPageURL": "https://hydraxous.itch.io/hades-cave",
+    "ItchLink": "https://hydraxous.itch.io/hades-cave",
+    "Description": "A brother and sister seem to have found themselves lost in a cave. Help them get out of the cave by combining their strengths to overcome their weaknesses.",
+    "ThumbnailURL": "/images/thumbnails/hadescave_thumb.png",
+    "ThumbnailAltText": "Hades Cave Preview",
+    "Genres": [
+      "Puzzle",
+      "Adventure",
+      "Exploration"
+    ],
+    "ProjectStatus": "Game Jam"
+  },
+  {
+    "Name": "Bagel Booster",
+    "InfoPageURL": "https://hydraxous.itch.io/bagel-booster",
+    "ItchLink": "https://hydraxous.itch.io/bagel-booster",
+    "Description": "With an unsatiable apetite how will the galaxy ever feed this man? How much can you consume before you're caught by the clerk? You know what happens to thieves.",
+    "ThumbnailURL": "/images/thumbnails/bagelbooster_thumb.png",
+    "ThumbnailAltText": "Bagel Booster preview",
+    "Genres": [
+      "Arcade",
+      "First-Person",
+      "Roguelike"
+    ],
+    "ProjectStatus": "Game Jam"
+  },
+  {
+    "Name": "Rent's Due",
+    "InfoPageURL": "https://hydraxous.itch.io/rents-due",
+    "ItchLink": "https://hydraxous.itch.io/rents-due",
+    "Description": "Rent's due. Do what is necessary. Make sure you don't get caught! Steal as much as possible and evade police on your scooter.",
+    "ThumbnailURL": "/images/thumbnails/rentsdue_thumb.png",
+    "ThumbnailAltText": "Rents Due Preview",
+    "Genres": [
+      "Arcade",
+      "First-Person"
+    ],
+    "ProjectStatus": "Game Jam"
+  },
+  {
+    "Name": "Tempus Vein",
+    "InfoPageURL": "https://hydraxous.itch.io/tempus-vein",
+    "ItchLink": "https://hydraxous.itch.io/tempus-vein",
+    "Description": "Time is ripping apart at the seams. But why? Uncover the secrets of time in world of Tempus Vein.",
+    "ThumbnailURL": "/images/thumbnails/placeholder_thumb.png",
+    "ThumbnailAltText": "tempus vein placeholder",
+    "Genres": [
+      "Adventure",
+      "Action",
+      "Role-Playing"
+    ],
+    "ProjectStatus": "Commercial"
+  }
+]
