@@ -14,23 +14,23 @@ class GameHeader
 
     getRawHtml()
     {
-        return `<a href="${this.ItchLink}" class="container flex mx-auto justify-between bg-veryDarkBlue border-4 border-darkBlue rounded-md p-2 hover:bg-navy">
-        <img src="${this.ThumbnailURL}" alt="${this.ThumbnailAltText}" class="rounded-md border-4 border-darkBlue">
-        <div class="p-4 container flex-col mx-auto">
-            <div class=" container flex justify-between">
-                <div class="container flexcol">
-                    <h1 class="pb-4 text-5xl text-coolWhite font-bold">${this.Name}</h1>
-                    <h1 class="pb-2 text-2xl text-lapis rounded-md">View on Itch.io</h1>
+        return `<div class="flex flex-col md:flex-row bg-veryDarkBlue border-4 border-darkBlue rounded-md p-2">
+        <a href="${this.ItchLink}" class="w-fit rounded-md border-4 self-center md:self-start border-darkBlue hover:border-lapis">
+            <img src="${this.ThumbnailURL}" alt="${this.ThumbnailAltText}" class="">
+        </a>
+        <div class="p-4 flex-col w-full h-fit">
+            <div class="flex flex-col md:flex-row w-full justify-between">
+                <div class="flex flex-col border-b-4 border-lapis md:border-0">
+                    <h1 class="pb-4 text-3xl md:text-5xl text-coolWhite font-bold">${this.Name}</h1>
                 </div>
-                <div class="container flexcol">
-                    <p class="text-2xl text-lapis text-right">${this.getGenreString()}</p>
-                    <p class="text-2xl text-coolWhite text-right">${this.ProjectStatus}</p>
+                <div class="flex flex-col text-2xl text-left">
+                    <p class="text-lapis md:text-right">${this.getGenreString()}</p>
                 </div>
             </div>
-            
-            <p class="p-4 bg-darkBlue text-2xl text-coolWhite rounded-md">${this.Description}</p>
+
+            <p class="p-4 bg-darkBlue text-1xl md:text-3xl text-coolWhite rounded-md h-fit">${this.Description}</p>
         </div>
-    </a>`;
+    </div>`;
     }
 }
 

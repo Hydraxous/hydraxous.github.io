@@ -8,16 +8,17 @@
     <title>Projects</title>
 </head>
 <body class="bg-main-bg">
-    <nav class="relative container mx-auto p-5  mt-10">
-        <div class="flex items-center justify-between">
-            <a href="index.html" class="p-5 pb-8 rounded-md bg-darkBlue hover:bg-skyBlue">
-                <h1 class="text-7xl text-skyBlue hover:text-darkBlue">Hydraxous</h1>
-            </a>
-            <div class="p-5">
-                <a href="#" class="p-5 px-10 pt-4 text-4xl text-darkBlue bg-skyBlue rounded-md baseline hover:bg-coolWhite">Hire</a>
-                <a href="https://ko-fi.com/Hydraxous" target="_blank" rel="noopener noreferrer" class="p-5 px-6 pt-4 text-4xl text-darkBlue bg-skyBlue rounded-md baseline hover:bg-coolWhite">Donate</a>
+    <nav id="navbar">
+        <div class="relative container mx-auto p-5  md:mt-10">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <a href="/index.html" class="md:p-5 pb-2 md:pb-8 rounded-md  text-skyBlue hover:text-coolWhite">
+                    <h1 class="text-4xl md:text-7xl">Hydraxous</h1>
+                </a>
+                <div class="p-5">
+                    <a href="hire.html" class="p-2 md:p-4 px-5 pt-3 text-2xl md:text-4xl text-darkBlue bg-skyBlue rounded-md baseline hover:bg-coolWhite">Hire</a>
+                    <a href="https://ko-fi.com/Hydraxous" target="_blank" rel="noopener noreferrer" class="p-2 md:p-4 px-5 pt-3 text-2xl md:text-4xl text-darkBlue bg-skyBlue rounded-md baseline hover:bg-coolWhite">Donate</a>
+                </div>
             </div>
-            
         </div>
     </nav>
     <section id="hero">
@@ -119,6 +120,29 @@
                 </div>
             </div>
         </div>
+        <!--
+           GAMES LIST PREFAB 
+        -->
+        <div class="flex flex-col md:flex-row bg-veryDarkBlue border-4 border-darkBlue rounded-md p-2">
+            <a href="${this.ItchLink}" class="w-fit rounded-md border-4 self-center md:self-start border-darkBlue hover:border-lapis">
+                <img src="${this.ThumbnailURL}" alt="${this.ThumbnailAltText}" class="">
+            </a>
+            <div class="p-4 flex-col w-full h-fit">
+                <div class="flex flex-col md:flex-row w-full justify-between">
+                    <div class="flex flex-col border-b-4 border-lapis md:border-0">
+                        <h1 class="pb-4 text-3xl md:text-5xl text-coolWhite font-bold">${this.Name}</h1>
+                    </div>
+                    <div class="flex flex-col text-2xl text-left">
+                        <p class="text-lapis md:text-right">${this.getGenreString()}</p>
+                    </div>
+                </div>
+
+                <p class="p-4 bg-darkBlue text-1xl md:text-3xl text-coolWhite rounded-md h-fit">${this.Description}</p>
+            </div>
+        </div>
+        <!--
+           GAMES LIST PREFAB END 
+        -->
     </section>
 </body>
 
