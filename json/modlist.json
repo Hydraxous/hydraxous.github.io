@@ -44,11 +44,11 @@
     "GithubURL": "https://github.com/Hydraxous/EasyPZ-ULTRAKILL"
   },
   {
-    "Name": "LogansHat",
+    "Name": "KnightsTools",
     "Version": "1.0.0",
     "Platform": "Knight's Try",
     "PlatformURL": "https://store.steampowered.com/app/1779180/Knights_Try/",
-    "Description": "Add's a big ol hat to the Knight.",
+    "Description": "A suite of various additions to the game including but not limited to... Random Dice Effects, Gameplay Debugging Tools, Custom Content/Level loading. Server socket integration for use with Twitch and Discord.",
     "ThumbnailURL": "images/thumbnails/placeholder_thumb.png",
     "ThumbnailAltText": "Bighat Icon",
     "DownloadURL": "",

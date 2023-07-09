@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Custom Debug Console</title>
+</head>
+<body class="bg-main-bg">
+    <nav id="navbar">
+        <script src="/injectnav.js"></script>
+    </nav>
+    <section id="hero">
+        <div class="container mx-auto flex flex-col space-y-2">
+           <div class="bg-veryDarkBlue rounded-md">
+            
+                <div class="w-full bg-darkBlue text-center text-3xl md:text-5xl text-coolWhite rounded-md">
+                    <h1 class="p-5 font-bold">Debug Console</h1>
+                    <p class="p-2 text-2xl">
+                        WIP journal entry
+                    </p>
+                </div>
+                <div class="p-6 w-full h-fit text-coolWhite flex-col space-y-2 md:space-y-4">
+                    <div class="flex-col space-y-2">
+                        <h1 class="p-2 text-3xl border-b-2 border-lapis">What is a Debug Console?</h1>
+                        
+                        <p class="p-4 md:text-2xl">
+                            A debug console is a tool used by developers to recieve information output from a program.
+                             They are typically also used to run commands and execute arbitrary logic for testing or debugging purposes. 
+                             In game development, they can be especially useful in manually running certain code or setting certain values for speedy testing.
+                             In this post, I'm going to be making a debug console for my game built on UnityEngine called Tempus Vein. Although most of the code here is
+                             specific to Unity, the actual command processing techniques can be very easily adapted to run inside a CLI application. 
+                             Unity Editor does have a built in debug console which outputs log messages inside the editor. You can make this console appear in game using the legacy GUI system. 
+                             However, it doesn't have a way to execute commands. I want a way to execute commands to affect the game in some way, so this post will be outlining how I achieved this.
+                        </p>
+                    </div>
+                    <div class="flex-col space-y-2">
+                        <h1 class="text-3xl md:text-3xl border-b-2 border-lapis p-2">Creating a UI window</h1>
+                        <p class="p-2 md:text-2xl">
+                            We first need a way to see messages in the debug console.
+                        </p>
+                        <div class="p-2 flex flex-col md:flex-row md:bg-superDark rounded-md">
+                            <img src="/images/contentImages/journals/gameconsole/textwindow.PNG" class="w-full md:w-1/4 border-4 border-lapis rounded-md">
+                            <p class="p-4 md:text-2xl">
+                                Here is the UI I've created for my console. It is a ScrollRect component with a text area, a command input field, scroll bar, and submit button. 
+                                When a message gets logged it will be appended to the window's text cache and will show up at the bottom of the window.
+                            </p>
+                        </div>                    
+                    </div>
+                    <div class="flex-col space-y-2">
+                        <h1 class="text-4xl md:text-3xl border-b-2 border-lapis p-2">Input and Output Structure</h1>
+                        <p class="p-2 md:text-2xl">
+                            Unity has a built in logging feature with the static Debug class. All we need to do is get Unity to send it's logging messages to our console window.
+                            This is extremely easy to do since Unity's API has provided an event specifically for outputting log messages.
+                            <a href="https://docs.unity3d.com/ScriptReference/Application-logMessageReceived.html" class="text-lapis">Documented here.</a>
+                            All that we have to do is subscribe to the event, then interpret the message.
+                        </p>
+                        <p class="p-2 md:text-2xl">
+                            I've separated the work into two classes. The first class, GameConsole handles keeping the log, the commands, and executing commands. 
+                            The second class is ConsoleWindow which is responsible for displaying the logs and sending user input to be interpreted by the GameConsole class.
+                        </p>
+                        <div class="p-2 flex flex-col md:flex-row md:bg-superDark rounded-md">
+                            <img src="/images/contentImages/journals/gameconsole/consoleStructure.PNG" class="w-full md:w-1/3 border-4 border-lapis rounded-md">
+                            <p class="p-4 md:text-2xl">
+                                This is the structure and flow of the console logic. Starting from the User, the user will input a raw text command. After the command is entered by the user,
+                                it will be sent by the ConsoleWindow to GameConsole to be interpreted into a command for processing. If the console can resolve a raw command into a command, the command is then executed.
+                                Working in reverse for log messages, Unity will output a log event. Then GameConsole will interpret the log event into our custom LogMessage type, then store it in the current session log and invoke its own log event.
+                                The ConsoleWindow being subscribed to this log event will then add the message contents to its local cache and display it to the User with text.
+                            </p>
+                        </div>   
+                    </div>
+                    <div class="flex-col space-y-2">
+                        <h1 class="text-4xl md:text-3xl border-b-2 border-lapis p-2">Commands</h1>
+                        <p class="p-2 md:text-2xl">
+                            After getting logging output set up, we have to build commands to be used with the console. Ive created an abstract class called Command to supply a simple foundation
+                            for expanding with logic. The simple command structure is to have a name field that acts as the commands identifier and a method called Execute that takes a string array as a parameter and returns a True/False value.
+                            The parmeters of course will act as the command arguments. The return value indicating if the command was executed successfully or not.
+                        </p>
+                        <p class="p-2 md:text-2xl">
+                            With this structure we can do just about anything with just the one method. We can create subclasses of the command class that have their own implementation of code when executed.
+                            I've gone a few steps further and added fields for expected command arguments, subcommands, a description, usage guidelines, etc. This allows for insane flexibility with what commands can do.
+                        </p>
+                    </div>
+                    <div class="flex-col space-y-2">
+                        <h1 class="text-4xl md:text-3xl border-b-2 border-lapis p-2">Runtime Command Generation</h1>
+                        <p class="p-2 md:text-2xl">
+                            One of the commands I've created called "dyn" generates commands for public static methods at runtime. Using reflection, it scans the game's assembly's types for public static methods.
+                            Once it locates a suitable method, it will generate an subcommand that executes the method. The dyn command uses a subclass of command called Dynamic Command, which more or less is just an empty 
+                            Command class with public backing fields that will be accessed by the overriden methods. Instead of executing concrete code, it will execute an Action delegate that can be assigned to it. 
+                        </p>
+                    </div>
+                    <div class="flex-col space-y-2">
+                        <h1 class="text-4xl md:text-3xl border-b-2 border-lapis p-2">Auto-Complete Suggestions</h1>
+                        <p class="p-2 md:text-2xl">
+                            I also added auto-completion to commands. When a ConsoleWindow subscribes to the GameConsole's log events it also gets the entire command tree registered with the GameConsole. 
+                            Then it recursively caches each command's name, subcommands, and arguments as string data. When a user starts typing, the ConsoleWindow will match whatever the user typed to its cache of command information.
+                            If it finds a part of the incomplete string it will then display a guess of what command or subcommand the user is typing.
+                        </p>
+                    </div>
+                    <div class="flex-col space-y-2">
+                        <h1 class="text-4xl md:text-3xl border-b-2 border-lapis p-2">Final Result</h1>
+                        <div class="flex p-2 w-full justify-center items-center align-middle">
+                            <iframe class="w-full md:w-2/3 rounded-md border-4 border-lapis" width="560" height="400" src="https://www.youtube-nocookie.com/embed/oQM8Zsak7BA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+        
+    </section>
+</body>
+<!--
+<script type="module" src="/scripts/gamelist.js"></script>
+
+-->
+</html>
