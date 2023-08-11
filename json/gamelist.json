@@ -1,4 +1,19 @@
 [
+  
+  {
+    "Name": "F.I.W.B.",
+    "InfoPageURL": "#",
+    "ItchLink": "https://twitter.com/HauntedPs1",
+    "Description": "Releasing on August 30, 2023. Play a Basketball-esque sport with overclocked robots. Part of the Haunted PS1 Sports collaboration. Supports local cooperative play with up to four players.",
+    "ThumbnailURL": "/images/thumbnails/fiwb_thumb.png",
+    "ThumbnailAltText": "F.I.W.B. Icon",
+    "Genres": [
+      "Sports",
+      "Arcade",
+      "Local-Multiplayer"
+    ],
+    "ProjectStatus": "Collaboration"
+  },
   {
     "Name": "Hades' Cave",
     "InfoPageURL": "https://hydraxous.itch.io/hades-cave",

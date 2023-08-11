@@ -22,6 +22,17 @@
     "GithubURL": "https://github.com/Hydraxous"
   },
   {
+    "Name": "UltraChat",
+    "Version": "1.6.1",
+    "Platform": "ULTRAKILL",
+    "PlatformURL": "http://devilmayquake.com",
+    "Description": "UltraChat is a global chat mod. It allows players using the mod to communicate via global chat channels. It includes filtering for specific levels and locations. (At this time UltraChat is still early in development and is not publicly available.)",
+    "ThumbnailURL": "images/thumbnails/ultrachat_thumb.png",
+    "ThumbnailAltText": "BossRush Icon",
+    "DownloadURL": "#",
+    "GithubURL": "https://github.com/Hydraxous/UltraChat"
+  },
+  {
     "Name": "BossRush",
     "Version": "1.1.2",
     "Platform": "ULTRAKILL",
@@ -51,8 +62,8 @@
     "Description": "A suite of various additions to the game including but not limited to... Random Dice Effects, Gameplay Debugging Tools, Custom Content/Level loading. Server socket integration for use with Twitch and Discord.",
     "ThumbnailURL": "images/thumbnails/placeholder_thumb.png",
     "ThumbnailAltText": "Bighat Icon",
-    "DownloadURL": "",
-    "GithubURL": ""
+    "DownloadURL": "#",
+    "GithubURL": "#"
   },
   {
     "Name": "MoyaiSkulls",

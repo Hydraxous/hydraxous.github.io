@@ -1,4 +1,4 @@
-class ModEntry {
+class SoftwareEntry {
     constructor(obj)
     {
         obj && Object.assign(this, obj);
@@ -29,15 +29,14 @@ class ModEntry {
                     <h2 class="p-2 text-2xl text-lapis">${this.Version}</h2>
                 </div>
                 <div class="flex justify-between mb-2 h-12">
-                    <a href="${this.PlatformURL}"><h2 class="text-2xl text-skyBlue pt-2">${this.Platform}</h2></a>
+                    <h2 class="text-2xl text-skyBlue pt-2">${this.Platform}</h2>
                     <div class=" flex space-x-2 text-skyBlue">
-                        ${githubButton}
-                        ${downloadButton}
+                    ${githubButton}
+                    ${downloadButton}
                     </div>
                 </div>
                 <div>
                     <p class="p-4 bg-darkBlue text-2xl text-coolWhite rounded-md">${this.Description}</p>
-
                 </div>
             </div>
         </div>
@@ -45,13 +44,13 @@ class ModEntry {
     }
 }
 
-var contentBody = document.getElementById("modlistbody");
+var contentBody = document.getElementById("softwarelistbody");
 
 const buildModEntries = (data) => {
     data.forEach(modEntry => {
-        let newModEntry = new ModEntry(modEntry);
+        let newModEntry = new SoftwareEntry(modEntry);
         contentBody.innerHTML += newModEntry.getRawHtml();
     });
 }
 
-fetch("/json/modlist.json").then(response => response.json()).then(data => buildModEntries(data));
+fetch("/json/softwarelist.json").then(response => response.json()).then(data => buildModEntries(data));

@@ -1,0 +1,33 @@
+[
+  {
+    "Name": "HyberBot",
+    "Version": "2.1.1",
+    "Platform": "Discord",
+    "Description": "HyberBot is a Discord bot made for entertainment purposes. It contains commands designated for entertainment, api, and game integration.",
+    "ThumbnailURL": "images/thumbnails/hyberbot_thumb.png",
+    "ThumbnailAltText": "HyberBot Icon",
+    "DownloadURL": "#",
+    "GithubURL": "https://github.com/Hydraxous/HyberBot"
+  },
+  {
+    "Name": "UltraChatLib",
+    "Version": "1.1.0",
+    "Platform": "Dotnet",
+    "Description": "UltraChatLib is a class library for the UltraChat mod client and server. (At this time UltraChat is still early in development and is not publicly available.)",
+    "ThumbnailURL": "images/thumbnails/ultrachat_thumb.png",
+    "ThumbnailAltText": "HyberBot Icon",
+    "DownloadURL": "#",
+    "GithubURL": "https://github.com/Hydraxous/UltraChat"
+  },
+  {
+    "Name": "UltraChatServer",
+    "Version": "1.4.2",
+    "Platform": "Windows, Linux",
+    "Description": "UltraChatServer is the server backend for the UltraChat Mod for Ultrakill. (At this time UltraChat is still early in development and is not publicly available.)",
+    "ThumbnailURL": "images/thumbnails/ultrachat_thumb.png",
+    "ThumbnailAltText": "HyberBot Icon",
+    "DownloadURL": "#",
+    "GithubURL": "https://github.com/Hydraxous/UltraChat"
+  }
+
+]
