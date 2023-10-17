@@ -1,4 +1,15 @@
 [
+	{
+    "Name": "Carcass",
+    "Version": "1.0.1",
+    "Platform": "ULTRAKILL",
+    "PlatformURL": "http://devilmayquake.com",
+    "Description": "Carcass adds is a brand new flying husk enemy to ULTRAKILL called The Carcass. It has many unique attacks and behaviors. Made in collaboration with Rem_Phase02",
+    "ThumbnailURL": "images/thumbnails/carcass_thumb.png",
+    "ThumbnailAltText": "Carcass Icon",
+    "DownloadURL": "https://thunderstore.io/package/download/Hydraxous/Carcass/1.0.1/",
+    "GithubURL": "https://github.com/Hydraxous/Carcass"
+  },
   {
     "Name": "UltraFunGuns",
     "Version": "1.2.1",
