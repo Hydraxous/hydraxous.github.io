@@ -1,5 +1,21 @@
 [
-  
+  {
+    "Name": "INSIDE MENACE",
+    "InfoPageURL": "#",
+    "ItchLink": "https://x.com/_GizmoGames_",
+    "Description": "A fast paced rogue-lite movement shooter about disinfecting the Human body from within! Fight against an onslaught of diseases and organisms with the juiciest weapons and abilities!",
+    "ThumbnailURL": "/images/thumbnails/insidemenace_thumb.png",
+    "ThumbnailAltText": "INSIDE MENACE Icon",
+    "Genres": [
+      "First Person",
+      "Shooter",
+      "Fast Paced",
+	  "Rogue-lite",
+	  "Movement",
+	  "Juicy"
+    ],
+    "ProjectStatus": "Commercial"
+  },
   {
     "Name": "F.I.W.B.",
     "InfoPageURL": "#",

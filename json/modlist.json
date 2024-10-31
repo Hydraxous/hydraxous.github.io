@@ -1,4 +1,59 @@
 [
+{
+    "Name": "Spell Hand",
+    "Version": "1.0.0",
+    "Platform": "Lunacid",
+    "PlatformURL": "https://store.steampowered.com/app/1745510/Lunacid/",
+    "Description": "Spell Hand is a visual overhaul of spell casting for the game Lunacid. It adds a left hand which adorns the magic rings you equip and animates according to the spells you cast.",
+    "ThumbnailURL": "images/thumbnails/spellhand_thumb.png",
+    "ThumbnailAltText": "Spell Hand Icon",
+    "DownloadURL": "https://github.com/Hydraxous/SpellHand/releases/latest",
+    "GithubURL": "https://github.com/Hydraxous/SpellHand"
+  },
+  {
+    "Name": "Configgy",
+    "Version": "1.0.4",
+    "Platform": "ULTRAKILL",
+    "PlatformURL": "http://devilmayquake.com",
+    "Description": "Configgy is a configuration/UI generation mod for ULTRAKILL. It aims to make creating and using configurations easier for both mod developers and users. It also auto-generates UI for existing BepInEx configurations.",
+    "ThumbnailURL": "images/thumbnails/configgy_thumb.png",
+    "ThumbnailAltText": "Configgy Icon",
+    "DownloadURL": "https://github.com/Hydraxous/Configgy/releases/latest",
+    "GithubURL": "https://github.com/Hydraxous/Configgy"
+  },
+  {
+    "Name": "Ultracam",
+    "Version": "1.0.0",
+    "Platform": "ULTRAKILL",
+    "PlatformURL": "http://devilmayquake.com",
+    "Description": "A simple freecam mod for ULTRAKILL with both cinematic movement features and UnityEditor like movement.",
+    "ThumbnailURL": "images/thumbnails/ultracam_thumb.png",
+    "ThumbnailAltText": "Ultracam Icon",
+    "DownloadURL": "https://github.com/Hydraxous/Ultracam/releases/latest",
+    "GithubURL": "https://github.com/Hydraxous/Ultracam"
+  },
+  {
+    "Name": "Ultrakill64",
+    "Version": "1.0.1",
+    "Platform": "ULTRAKILL",
+    "PlatformURL": "http://devilmayquake.com",
+    "Description": "A mod that enables April Fools texture filtering at all times.",
+    "ThumbnailURL": "images/thumbnails/ultrakill64_thumb.png",
+    "ThumbnailAltText": "Ultrakill64 Icon",
+    "DownloadURL": "https://github.com/Hydraxous/Ultrakill64/releases/latest",
+    "GithubURL": "https://github.com/Hydraxous/Ultracam"
+  },
+  {
+    "Name": "Trye2Gether",
+    "Version": "0.0.6",
+    "Platform": "Knights Try",
+    "PlatformURL": "https://store.steampowered.com/app/1779180/Knights_Try/",
+    "Description": "Multiplayer mod for Knights Try. (Not yet publicly available.)",
+    "ThumbnailURL": "images/thumbnails/knightstry_thumb.png",
+    "ThumbnailAltText": "Trye2Gether Icon",
+    "DownloadURL": "#",
+    "GithubURL": "https://youtu.be/DROczgwR-9Q"
+  },
 	{
     "Name": "Carcass",
     "Version": "1.0.1",
@@ -22,7 +77,7 @@
     "GithubURL": "https://github.com/Hydraxous/UltraFunGuns"
   },
   {
-    "Name": "HydraDynamics",
+    "Name": "HydraDynamics (Deprecated)",
     "Version": "1.1.0",
     "Platform": "UnityEngine",
     "PlatformURL": "https://unity.com/",
@@ -32,6 +87,7 @@
     "DownloadURL": "https://thunderstore.io/package/download/Hydraxous/HydraDynamics/1.1.0/",
     "GithubURL": "https://github.com/Hydraxous"
   },
+  
   {
     "Name": "UltraChat",
     "Version": "1.6.1",
@@ -64,17 +120,6 @@
     "ThumbnailAltText": "EasyPZ Icon",
     "DownloadURL": "https://thunderstore.io/package/download/Hydraxous/EasyPZ/2.0.2/",
     "GithubURL": "https://github.com/Hydraxous/EasyPZ-ULTRAKILL"
-  },
-  {
-    "Name": "KnightsTools",
-    "Version": "1.0.0",
-    "Platform": "Knight's Try",
-    "PlatformURL": "https://store.steampowered.com/app/1779180/Knights_Try/",
-    "Description": "A suite of various additions to the game including but not limited to... Random Dice Effects, Gameplay Debugging Tools, Custom Content/Level loading. Server socket integration for use with Twitch and Discord.",
-    "ThumbnailURL": "images/thumbnails/placeholder_thumb.png",
-    "ThumbnailAltText": "Bighat Icon",
-    "DownloadURL": "#",
-    "GithubURL": "#"
   },
   {
     "Name": "MoyaiSkulls",
